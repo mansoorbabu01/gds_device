@@ -29,7 +29,7 @@
         return false;
         
         
-        $.post("api.php",{new_str:f,section:"check"},
+        $.post("http://192.168.1.113/sync/Dropbox/gds/api.php",{new_str:f,section:"check"},
         function(data)
         {    
              var value              = $.parseJSON(data);
