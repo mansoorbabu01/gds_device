@@ -2,5 +2,6 @@
 <widget>
    <name>Go digi signs</name>
    <access origin=".*"/>
+   <uses-permission android:name="android.permission.INTERNET" />
 </widget>
 
