@@ -43,8 +43,11 @@
                  
                 var lat                = '25.416212';
                 var lng                = '55.443210';           
-                var auth_json          = JSON.stringify({auth:auth,record_id:record_id,lng:lng,lat:lat});                   
-                $.post("api.php",{section:"give_permission",auth_json:auth_json},
+                var auth_json          = JSON.stringify({auth:auth,record_id:record_id,lng:lng,lat:lat}); 
+              
+              \sync\Dropbox\gds
+              
+                $.post("http://192.168.1.113/sync/Dropbox/gds/api.php",{section:"give_permission",auth_json:auth_json},
                 function(data)
                 {
                     
