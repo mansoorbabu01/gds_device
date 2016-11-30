@@ -1,0 +1,78 @@
+
+<!-- Latest compiled and minified CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/lib/001_bootstrap/bootstrap.min.css" >
+<!-- Optional theme -->
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="js/lib/001_bootstrap/bootstrap.min.js"></script>
+<script src='js/lib/001_jquery/jquery.min.js'></script>
+
+
+<script src="js/lib/001_input-mask/jquery.mask.min.js"></script>
+<script src="js/lib/001_input-mask/input-mask-init.js"></script>
+<script src='device_init.js'></script>
+
+ 
+    
+<style>
+    
+    body
+    {
+        background-color:black;
+        
+    }
+    
+    .device_view
+    {        
+        border:15px solid #DBDBDB;
+        border-radius:10px;
+        margin:auto;
+        height:90%;
+        background-color:#0080AB;
+        margin-top:2%;
+        
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);        
+        
+    }
+    
+    
+</style>
+
+<div class="col-md-4"></div>
+    <div class="col-md-4 device_view">    
+        
+        
+        
+        <div class="col-md-2"></div>
+        
+        <div class="form-group col-md-8" style="margin-top:60%;">
+            
+            
+            
+            
+            
+            <center>
+                <form method="post" action=''>
+                
+                <h3 style="color:#6EC0DB;">Activate Device</h3>
+                    <input style="text-align:center;" type="text" name="activation_code" id="phone-mask-input" class="form-control" value='1234123412341234' />
+                    
+                <br/>
+                  <button id='send_button' type='button' class="btn btn-success">Activate Now</button> 
+                
+                </form>
+            </center>
+
+            <div class='col-md-12' id='result' align='center'></div>
+        </div>                                      
+        
+        <div class="col-md-2"></div>
+        
+        
+        
+    </div>
+<div class="col-md-4"></div>
