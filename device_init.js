@@ -1,11 +1,34 @@
+     
  $(document).ready(function()
     {
         
         
-        
+            /*
+            var data = {is_activated: "true", device_id: "1234", sync_time: 3};            
+            var json_value = JSON.stringify(data);
+            alert(json_value);
+            */
+                      
+            
+            $.getJSON('gds_data.json', function(jd) 
+            {
+               
+                        var status      = jd.is_activated;
+                        var device_id   = jd.device_id;
+                        var sync_time   = jd.sync_time; 
+                        
+                        alert(sync_time);
+            });
+            
+            
+        return false;
+        //START : FOR SYNCING PROCESS
+        /*
          setInterval(function () {
         alert('Syncing process');
        },3000);
+       */
+       //START : FOR SYNCING PROCESS 
          
          $("#send_button").click(function(){
         var code            = $("#phone-mask-input").val();            
@@ -71,4 +94,8 @@
         
     });
     
+  
+    
+    
+   
     
