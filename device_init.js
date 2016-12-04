@@ -3,7 +3,7 @@
       
          
          $("#send_button").click(function(){
-            var code            = $("#phone-mask-input").val();            
+        var code            = $("#phone-mask-input").val();            
         var new_str         = code.replace(/-/g, "");        
         var length          = new_str.length;
         
@@ -20,10 +20,6 @@
         var f = JSON.stringify(
                                    {code:new_str}
                               ); 
-                      
-                      
-         
-        
         
         alert("Here is json: "+f);
         ////return false;
@@ -34,7 +30,6 @@
         //$.post("api.php",{json_version:json_version},
         
         $.post("http://192.168.1.113/sync/Dropbox/gds/api.php",{new_str:f,section:"check"},
-        
         function(data)
         {    
             
@@ -44,7 +39,7 @@
              var record_id          = value["record_id"];
              
              alert("auth:"+value['auth']);
-             return false;
+             
              
              
             
