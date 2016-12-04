@@ -1,6 +1,11 @@
  $(document).ready(function()
     {
-      
+        
+        
+        
+         setInterval(function () {
+        alert('Syncing process');
+       },3000);
          
          $("#send_button").click(function(){
         var code            = $("#phone-mask-input").val();            
@@ -66,4 +71,4 @@
         
     });
     
-   
+    
