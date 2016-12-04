@@ -39,7 +39,7 @@
              var record_id          = value["record_id"];
              
              alert("auth:"+value['auth']);
-             
+             return false;
              
              
             
