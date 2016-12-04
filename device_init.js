@@ -2,6 +2,17 @@
  $(document).ready(function()
     {
         
+            var obj = {
+                name: 'Dhayalan',
+                score: 100
+            };
+            
+            localStorage.setItem('gameStorage', JSON.stringify(obj));        
+            
+            var obj = JSON.parse(localStorage.getItem('gameStorage'));            
+            alert(obj);
+            
+            return false;
         
             /*
             var data = {is_activated: "true", device_id: "1234", sync_time: 3};            
@@ -21,7 +32,7 @@
             });
             
             
-        return false;
+       
         //START : FOR SYNCING PROCESS
         /*
          setInterval(function () {
